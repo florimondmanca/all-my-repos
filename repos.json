@@ -1,0 +1,9 @@
+{
+  "www": "https://github.com/florimondmanca/www",
+  "asgi-sitemaps": "https://github.com/florimondmanca/asgi-sitemaps",
+  "asgi-lifespan": "https://github.com/florimondmanca/asgi-lifespan",
+  "aiometer": "https://github.com/florimondmanca/aiometer",
+  "djangorestframework-api-key": "https://github.com/florimondmanca/djangorestframework-api-key",
+  "msgpack-asgi": "https://github.com/florimondmanca/msgpack-asgi",
+  "tartiflette-asgi": "https://github.com/florimondmanca/tartiflette-asgi"
+}

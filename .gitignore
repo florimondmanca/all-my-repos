@@ -1,0 +1,15 @@
+# Tooling.
+venv*/
+
+# Caches.
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+
+# Private
+.env
+all-repos.json
+
+# all-repos
+output/

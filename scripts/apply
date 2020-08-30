@@ -1,0 +1,5 @@
+#!/bin/sh -ex
+
+BIN="venv/bin/"
+
+${BIN}python autofixers/$1.py

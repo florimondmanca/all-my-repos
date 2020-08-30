@@ -1,0 +1,17 @@
+#!/bin/sh -ex
+
+BIN="venv/bin/"
+
+source .env
+[ -z $GITHUB_API_KEY ] && echo 'Error: GITHUB_API_KEY is missing in .env' && exit 1
+
+sed "s,\$GITHUB_API_KEY,$GITHUB_API_KEY,g" all-repos.template.json > all-repos.json
+chmod 600 all-repos.json  # Weird macOS permissions gotcha.
+
+if [ ! -d 'venv' ]; then
+  python -m venv venv
+fi
+
+${BIN}pip install -U pip wheel
+${BIN}pip install all-repos
+${BIN}all-repos-clone

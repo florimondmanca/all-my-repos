@@ -1,0 +1,12 @@
+{
+  "output_dir": "output",
+  "source": "all_repos.source.json_file",
+  "source_settings": {
+    "filename": "./repos.json"
+  },
+  "push": "all_repos.push.github_pull_request",
+  "push_settings": {
+    "api_key": " $GITHUB_API_KEY",
+    "username": "florimondmanca"
+  }
+}
